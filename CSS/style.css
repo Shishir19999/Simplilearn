@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+}
+
+.top-header {
+  margin: 0;
+  background-color: #e6ecef;
+}
+.top-header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+}
+.top-header ul li {
+  list-style: none;
+}
+.top-header ul li a {
+  text-decoration: none;
+  color: #293031;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 44px;
+  line-height: 38px;
+}
+.top-header ul li :hover {
+  color: #118aef;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+}
+.bottom-header .logo {
+  width: auto;
+  height: 46.2px;
+}
+.bottom-header .logo img {
+  margin-top: 5px;
+  width: 150px;
+  height: 46px;
+}
+.bottom-header .menu {
+  width: 15%;
+  background-color: red;
+}
+.bottom-header .search {
+  margin-left: -1px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bottom-header .search button {
+  background-color: none;
+  border: none;
+}
+.bottom-header .search button box-icon {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  margin-right: -29px;
+  color: #118aef;
+  font-size: 10px;
+  z-index: 1;
+}
+.bottom-header .search input {
+  margin-left: -17px;
+  border-radius: 4px;
+  width: 445px;
+  height: 32px;
+  border: 1px solid #118aef;
+  text-indent: 63px;
+  color: #118aef;
+}
+.bottom-header .search input::-moz-placeholder {
+  color: #118aef;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(2px);
+}
+.bottom-header .search input::placeholder {
+  color: #118aef;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(2px);
+}
+.bottom-header .login-section {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom-header .login-section .login-btn {
+  position: relative;
+  top: 1px;
+  height: 37.6px;
+  width: 100px;
+  line-height: 36px;
+  border-radius: 4px;
+  border: 1px solid #808890;
+  text-align: center;
+  font-size: 14px;
+  color: #808890;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  height: 800px;
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */
