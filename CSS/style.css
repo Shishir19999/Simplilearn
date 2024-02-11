@@ -1,3 +1,11 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
 body {
   margin: 0;
 }
@@ -10,32 +18,32 @@ body {
 header {
   height: 100px;
 }
-
-.top-header {
+header .top-header {
   margin: 0;
   background-color: #e6ecef;
 }
-.top-header ul {
+header .top-header ul {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
   height: 38px;
 }
-.top-header ul li {
+header .top-header ul li {
   list-style: none;
 }
-.top-header ul li a {
+header .top-header ul li a {
+  transform: translateY(-1px);
   text-decoration: none;
   color: #293031;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: "roboto", sans-serif;
   display: inline-block;
   font-weight: 400;
   margin-left: 44px;
   line-height: 38px;
 }
-.top-header ul li :hover {
+header .top-header ul li a:hover {
   color: #118aef;
 }
 
@@ -54,57 +62,217 @@ header {
   width: 150px;
   height: 46px;
 }
-.bottom-header .menu {
+
+.menu {
   width: 15%;
-  background-color: red;
 }
-.bottom-header .search {
-  margin-left: -1px;
-  width: 50%;
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul li {
+  line-height: 62px;
+}
+.menu ul li button {
+  margin-left: 25.5px;
+  width: 146px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #118aef;
+  background-color: #118aef;
   display: flex;
+  justify-content: space-between;
+}
+.menu ul li button img {
+  margin-top: 7px;
+  margin-left: 12.5px;
+  width: 21px;
+  height: 20.5px;
+}
+.menu ul li button a {
+  margin-right: 16px;
+  margin-top: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  background-color: #118aef;
+  border-radius: 5px;
+  color: white;
+}
+.menu ul :hover .mega-menu {
+  display: flex;
+}
+.menu ul .mega-menu {
+  background-color: rgb(241, 236, 236);
+  width: 870px;
+  height: 545px;
+  position: absolute;
+  margin-left: -29px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul .mega-menu .left-menu {
+  border: 1px solid rgb(241, 234, 234);
+  padding-left: 15px;
+  background-color: white;
+  width: 26%;
+}
+.menu ul .mega-menu .left-menu #style-3::-webkit-scrollbar {
+  width: 4px;
+}
+.menu ul .mega-menu .left-menu #style-3::-webkit-scrollbar-thumb {
+  background-color: rgb(188, 188, 188);
+  border: 2px solid rgb(188, 188, 188);
+  border-radius: 10px;
+}
+.menu ul .mega-menu .left-menu .top-left-menu-cat {
+  height: 55px;
+  text-align: left;
+}
+.menu ul .mega-menu .left-menu .top-left-menu-cat h1 {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.menu ul .mega-menu .left-menu .bottom-left-menu-cat-btn {
+  height: 490px;
+  overflow-y: scroll;
+}
+.menu ul .mega-menu .left-menu .bottom-left-menu-cat-btn ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul .mega-menu .left-menu .bottom-left-menu-cat-btn ul li {
+  text-align: left;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.menu ul .mega-menu .left-menu .bottom-left-menu-cat-btn ul li a {
+  background-color: white;
+  text-decoration: none;
+  padding: 0;
+  color: black;
+}
+.menu ul .mega-menu .right-menu {
+  background-color: rgb(244, 245, 246);
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+}
+.menu ul .mega-menu .right-menu #style-5::-webkit-scrollbar {
+  width: 5px;
+}
+.menu ul .mega-menu .right-menu #style-5::-webkit-scrollbar-thumb {
+  background-color: rgb(188, 188, 188);
+  border: 2px solid rgb(188, 188, 188);
+  border-radius: 10px;
+}
+.menu ul .mega-menu .right-menu .menu-right-top {
+  margin-left: 18px;
+  width: 96.3%;
+  height: 475px;
+  background-color: rgb(244, 245, 246);
+  overflow-y: scroll;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 97%;
+  height: 136px;
+  background-color: white;
+  border: 1px solid rgb(241, 234, 234);
+  justify-content: space-between;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .title-course-child {
+  width: 100%;
+  background: purple;
+  height: 43px;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .title-course-child img {
+  width: 80%;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .description-course-child {
+  width: 100%;
+  background: rgb(246, 95, 7);
+  height: 43px;
+}
+.menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .date-sourse-child {
+  width: 100%;
+  background: rgb(0, 160, 29);
+  height: 43px;
+}
+.menu ul .mega-menu .right-menu .menu-right-btn {
+  background-color: rgb(228, 237, 239);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.menu ul .mega-menu .right-menu .menu-right-btn button {
+  justify-content: center;
+  padding: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.search {
+  width: 53%;
   position: relative;
 }
-.bottom-header .search button {
-  background-color: none;
-  border: none;
-}
-.bottom-header .search button box-icon {
+.search img {
+  height: 19px;
+  width: 22px;
+  cursor: pointer;
   position: absolute;
-  top: 6px;
-  left: 10px;
+  top: 10px;
+  left: 33px;
   margin-right: -29px;
   color: #118aef;
   font-size: 10px;
-  z-index: 1;
 }
-.bottom-header .search input {
-  margin-left: -17px;
+.search input {
+  margin-left: 18px;
   border-radius: 4px;
-  width: 445px;
-  height: 32px;
+  width: 439px;
+  height: 34px;
   border: 1px solid #118aef;
-  text-indent: 63px;
+  text-indent: 61.5px;
   color: #118aef;
+  margin-top: 2px;
 }
-.bottom-header .search input::-moz-placeholder {
-  color: #118aef;
-  font-size: 14px;
-  font-weight: 500;
-  transform: translateY(2px);
-}
-.bottom-header .search input::placeholder {
+.search input::-moz-placeholder {
   color: #118aef;
   font-size: 14px;
-  font-weight: 500;
-  transform: translateY(2px);
+  font-weight: 400;
 }
-.bottom-header .login-section {
+.search input::placeholder {
+  color: #118aef;
+  font-size: 14px;
+  font-weight: 400;
+}
+.search input:focus {
+  outline: none;
+}
+
+.login-section {
   width: 15%;
   display: flex;
   justify-content: flex-end;
 }
-.bottom-header .login-section .login-btn {
+.login-section .login-btn {
   position: relative;
   top: 1px;
   height: 37.6px;
@@ -123,5 +291,4 @@ header {
 main {
   width: 100%;
   height: 800px;
-  background-color: gray;
 }/*# sourceMappingURL=style.css.map */
