@@ -7,12 +7,14 @@
   src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
 body {
+  height: 1500px;
   margin: 0;
 }
 
 .container {
   width: 75%;
   margin: auto;
+  position: relative;
 }
 
 header {
@@ -112,7 +114,9 @@ header .top-header ul li a:hover {
   margin-left: -29px;
   padding: 0;
   display: flex;
+  display: none;
   justify-content: space-between;
+  z-index: 500;
 }
 .menu ul .mega-menu .left-menu {
   border: 1px solid rgb(241, 234, 234);
@@ -277,7 +281,7 @@ header .top-header ul li a:hover {
   top: 1px;
   height: 37.6px;
   width: 100px;
-  line-height: 36px;
+  line-height: 35px;
   border-radius: 4px;
   border: 1px solid #808890;
   text-align: center;
@@ -288,7 +292,144 @@ header .top-header ul li a:hover {
   background-color: white;
 }
 
-main {
+main .banner {
   width: 100%;
-  height: 800px;
+  height: 492px;
+  background-image: url(/img/banner.avif);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  position: relative;
+}
+main .banner .banner-content-container {
+  width: 74%;
+  margin: auto;
+}
+main .banner .banner-content-container .banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+main .banner .banner-content-container .banner-container .left-banner {
+  width: 495px;
+  height: 412.15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-title h1 {
+  width: 495px;
+  height: 128px;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-family: "roboto";
+  color: white;
+  font-weight: 700;
+  line-height: 1.27;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-list {
+  margin-top: 16px;
+  color: white;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-list ul li {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  line-height: 30.05px;
+  padding: 0 0 12px;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-list ul li span {
+  font-weight: 300;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-link {
+  position: relative;
+  height: 142px;
+}
+main .banner .banner-content-container .banner-container .left-banner .banner-link .banner-button {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  margin: 44px 0px 50px;
+  width: 260px;
+  height: 48px;
+  text-decoration: none;
+  color: white;
+  background-color: #1179ef;
+  box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 500;
+}
+main .banner .banner-content-container .banner-container .right-banner {
+  width: 48%;
+  height: 382px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+main .banner .banner-content-container .banner-container .right-banner .videoframe img {
+  margin-right: -17px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 583px;
+  height: 378px;
+}
+main .banner .banner-content-container .banner-container .right-banner .videoframe video {
+  width: 523.5px;
+  height: 398px;
+  position: absolute;
+  bottom: 1px;
+  right: 12.5px;
+}
+main .career-partner {
+  margin-top: 5px 0 0 0;
+  width: 100%;
+  max-height: 213.8px;
+  padding: 35px 0 40px;
+}
+main .career-partner .career-partner-content {
+  margin: 0 174.6px;
+  padding: 0 0 0 15px;
+  max-height: 138.8px;
+}
+main .career-partner .career-partner-content p {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+  color: #272c37;
+  line-height: 24px;
+}
+main .career-partner .career-partner-content .image-scroll-partner {
+  height: 118px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+main .career-partner .career-partner-content .image-scroll-partner .image-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollImages 150s linear infinite;
+}
+main .career-partner .career-partner-content .image-scroll-partner .image-wrapper img {
+  margin: 0 24px 0 0;
+  padding: 0 8px;
+}
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=style.css.map */
