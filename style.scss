@@ -1,7 +1,7 @@
 $primary_color: #118aef;
 $top_header_bgcolor: #e6ecef;
 $top_menu_text_color: #293031;
-
+$primary-text-color:#272c37;
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -471,7 +471,7 @@ main {
     width: 100%;
     max-height: 213.8px;
     padding: 35px 0 40px;
-    .career-partner-content {
+    #career-partner-content {
       margin: 0 174.6px;
       padding: 0 0 0 15px;
       max-height: 138.8px;
@@ -482,7 +482,7 @@ main {
         margin: 0 0 18px;
         font-size: 16px;
         font-family: 'roboto', sans-serif;
-        color: #272c37;
+        color: $primary_text_color;
         line-height: 24px;
       }
 
@@ -515,13 +515,15 @@ main {
     margin:40px 0 0;
     padding:0 0 40px;
     width:1519.2px;
-    height:1372px;
+    height:1332px;
     background-color: gray;
     h1{
       line-height: 40px;
       height:40px;
-      color:#272c37;
-      font-family: 'roboto';
+      color:$primary_text_color;
+      font-family: 'roboto',sans-serif;
+      margin:0;
+      font-size:32px;
       
     }
     p{
@@ -529,7 +531,7 @@ main {
       font-size:16px;
       line-height: 28px;
       color:#51565e;
-      font-family: 'roboto';
-}
+      font-family: 'roboto',sans-serif;
+    }
   }
 }
