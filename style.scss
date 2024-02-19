@@ -518,12 +518,14 @@ main {
     height:1332px;
     background-color: gray;
     h1{
-      line-height: 40px;
-      height:40px;
+      display: block;
       color:$primary_text_color;
       font-family: 'roboto',sans-serif;
       margin:0;
       font-size:32px;
+      font-weight:normal;
+      height:40px;
+      line-height: 40px;
       
     }
     p{
@@ -532,6 +534,47 @@ main {
       line-height: 28px;
       color:#51565e;
       font-family: 'roboto',sans-serif;
+    }
+    .all-program-cat{
+      width:1155px;
+      height:1224px;
+      margin:24px 0 0;
+      .left-program-categories{
+
+        .top-left-program-cat{
+          width:273px;
+          height:40.8px;
+          h2{
+            margin:0;
+            color: $primary-text-color;
+            padding: 8px 16px;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 16px;
+            letter-spacing: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+        .bottom-left-program-cat{
+          width:273px;
+          height:630px;
+          padding: 8px 4px 8px 8px;
+          position: sticky;
+          display: inline-block;
+          vertical-align: top;
+          overflow-y: scroll;
+          .show-list{
+            width:257px;
+            height: 614px;
+            ul{
+
+              .category-tab{
+                
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

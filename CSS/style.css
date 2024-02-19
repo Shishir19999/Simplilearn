@@ -447,12 +447,14 @@ main .our-new-program {
   background-color: gray;
 }
 main .our-new-program h1 {
-  line-height: 40px;
-  height: 40px;
+  display: block;
   color: #272c37;
   font-family: "roboto", sans-serif;
   margin: 0;
   font-size: 32px;
+  font-weight: normal;
+  height: 40px;
+  line-height: 40px;
 }
 main .our-new-program p {
   margin: 16px 0 0;
@@ -460,4 +462,36 @@ main .our-new-program p {
   line-height: 28px;
   color: #51565e;
   font-family: "roboto", sans-serif;
+}
+main .our-new-program .all-program-cat {
+  width: 1155px;
+  height: 1224px;
+  margin: 24px 0 0;
+}
+main .our-new-program .all-program-cat .left-program-categories .top-left-program-cat {
+  width: 273px;
+  height: 40.8px;
+}
+main .our-new-program .all-program-cat .left-program-categories .top-left-program-cat h2 {
+  margin: 0;
+  color: #272c37;
+  padding: 8px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat {
+  width: 273px;
+  height: 630px;
+  padding: 8px 4px 8px 8px;
+  position: sticky;
+  display: inline-block;
+  vertical-align: top;
+  overflow-y: scroll;
+}
+main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat .show-list {
+  width: 257px;
+  height: 614px;
 }/*# sourceMappingURL=style.css.map */
