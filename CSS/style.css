@@ -547,7 +547,7 @@ main .our-new-program .all-program-cat .right-category-cards .card {
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body {
   width: 273px;
-  height: 410px;
+  height: 340px;
   cursor: pointer;
   display: block;
   display: flex;
@@ -647,4 +647,17 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-schedul
   font-weight: 400;
   line-height: 16px;
   display: block;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-right .know-more {
+  display: inline-block;
+  margin-top: 0;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-right span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #1179ef;
 }/*# sourceMappingURL=style.css.map */

@@ -662,7 +662,7 @@ main {
 
           .card-body {
             width: 273px;
-            height: 410px;
+            height: 340px;
             cursor: pointer;
             display: block;
             display: flex;
@@ -784,7 +784,20 @@ main {
               }
             }
             .card-right{
-              
+              .know-more{
+                display: inline-block;
+                margin-top: 0;
+                text-align: right;
+                position:absolute;
+                bottom: 0;
+              }
+              span{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                color: #1179ef;
+                
+              }
             }  
           }
         }
