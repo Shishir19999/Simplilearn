@@ -547,9 +547,11 @@ main .our-new-program .all-program-cat .right-category-cards .card {
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body {
   width: 273px;
-  height: 340px;
+  height: 410px;
   cursor: pointer;
   display: block;
+  display: flex;
+  flex-direction: column;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-banner {
   width: 100%;
@@ -578,17 +580,71 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-body .c
   background: #fff;
   width: 225px;
   height: 60px;
-  text-align: center;
   vertical-align: top;
   border-radius: 6px;
   box-shadow: 0px 2px 6px 0px rgba(39, 44, 55, 0.27);
   padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo img {
   width: 100%;
   height: auto;
-  vertical-align: middle;
+  max-height: 40px;
   border-style: none;
-  max-height: 50px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info h2 {
+  font-size: 16px;
+  color: #272c37;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 16px 0 0;
+  display: block;
+  letter-spacing: normal;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-list p {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 8px 0 0;
+  padding: 0 0 0 20px;
+  position: relative;
+  color: #4f4f4f;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule {
+  height: 36px;
+  margin: 16px 0 0;
+  padding: 0 16px;
+  line-height: normal;
+  position: absolute;
+  bottom: 16px;
+  width: 241px;
+  display: flex;
+  flex-direction: row;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left {
+  width: calc(100% - 77px);
+  vertical-align: bottom;
+  display: inline-block;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .month {
+  font-size: 12px;
+  font-family: "roboto", sans-serif;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .cohort {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left span {
+  color: #4f4f4f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
