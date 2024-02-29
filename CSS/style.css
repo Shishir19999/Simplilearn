@@ -4,7 +4,6 @@
 }
 
 body {
-  height: 1500px;
   margin: 0;
 }
 
@@ -532,6 +531,10 @@ main .our-new-program .all-program-cat .right-category-cards {
 main .our-new-program .all-program-cat .right-category-cards a {
   cursor: pointer;
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+main .our-new-program .all-program-cat .right-category-cards :hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 }
 main .our-new-program .all-program-cat .right-category-cards .card {
   width: 273px;
@@ -540,9 +543,9 @@ main .our-new-program .all-program-cat .right-category-cards .card {
   border-radius: 6px;
   background: #fff;
   padding-bottom: 0 0 52px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
   position: relative;
   height: 392px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
   margin: 0 16px 16px 0;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body {
@@ -660,4 +663,81 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-schedul
   font-weight: 500;
   line-height: 16px;
   color: #1179ef;
+}
+main .bootcamp {
+  height: 421.64px;
+  background: #f8fbff;
+  padding-bottom: 48px;
+}
+main .bootcamp span {
+  margin: 48px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #272c37;
+  line-height: normal;
+  display: inline-block;
+  font-family: "roboto", sans-serif;
+}
+main .bootcamp h2 {
+  margin: 12px 0 0 0;
+  font-size: 32px;
+  font-weight: 300;
+  color: #272c37;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+}
+main .bootcamp ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  padding-left: 0;
+  max-width: 100%;
+  margin-bottom: 0;
+  list-style: none;
+}
+main .bootcamp ul li:first-child {
+  margin-top: 0;
+}
+main .bootcamp ul li {
+  width: 285px;
+  height: 206.04px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+main .bootcamp ul li .bootcamp-img {
+  height: 82px;
+  display: inline-block;
+  vertical-align: top;
+}
+main .bootcamp ul li .bootcamp-img img {
+  width: 50px;
+  vertical-align: top;
+  height: auto;
+  border-style: none;
+}
+main .bootcamp ul li .bootcamp-info {
+  width: 255px;
+  height: 124.04px;
+  padding-left: 0;
+  display: block;
+}
+main .bootcamp ul li .bootcamp-info h4 {
+  font-size: 16px;
+  color: #343434;
+  font-family: "roboto", sans-serif;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 262px;
+  margin-bottom: 0;
+}
+main .bootcamp ul li .bootcamp-info p {
+  font-size: 14px;
+  font-family: "roboto", sans-serif;
+  color: #6C7480;
+  margin: 16px 0 0;
+  line-height: 1.43;
 }/*# sourceMappingURL=style.css.map */
