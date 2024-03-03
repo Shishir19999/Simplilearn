@@ -635,41 +635,38 @@ main {
       }
 
       .right-category-cards {
-        width: calc(74% - 0px);
-        height: 1224px;
-        // margin: 0 0 0 16px;
+        width: 854.7px;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-
+        flex-direction: row;
+        margin-bottom: 0;
         a {
-          cursor: pointer;
+          
           text-decoration: none;
-          transition: box-shadow 0.3s ease;
         }
-        :hover{
-
-          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .16);
-        }
+        
         .card {
           width: 273px;
           display: inline-block;
           vertical-align: top;
           border-radius: 6px;
           background: #fff;
-          padding-bottom: 0 0 52px;
+          padding:0 0 52px;
           box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, .16);
           position: relative;
-          height: 392px;
+          height: 340px;
           margin: 0 16px 16px 0;
-
+          &:nth-child(3n) {
+            margin-right: 0; 
+          }
           .card-body {
             width: 273px;
             height: 340px;
             cursor: pointer;
             display: block;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
 
             .card-banner {
               width: 100%;
