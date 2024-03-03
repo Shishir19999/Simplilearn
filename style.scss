@@ -674,7 +674,14 @@ main {
               border-radius: 4px 4px 0 0;
               overflow: hidden;
               position: relative;
-
+              
+              .crd-1 {
+                background: #ffcbcd;
+                background-image: radial-gradient(circle, #fffcf3 18%, #FFCBCD 63%, #FFCBCD 100%);
+                background-position: 4px -1px;
+                background-size: 152% 130%;
+                
+            }
               img {
                 width: 100%;
                 max-height: 122px;
@@ -691,31 +698,32 @@ main {
               position: relative;
               padding: 30px 16px 36px 16px;
               margin-top: -60px;
-
-              .card-logo {
-                display: inline-block;
-                background: #fff;
-                width: 225px;
-                height: 60px;
-                // text-align: center;
-                vertical-align: top;
-                border-radius: 6px;
-                box-shadow: 0px 2px 6px 0px rgba(39, 44, 55, .27);
-                padding: 0 8px;
-                display:flex ;
-                justify-content: center;
-                align-items: center;
-                max-width: 100%;
-                img {
+             .card-logo {
+              display: inline-block;
+              background: #fff;
+              width: auto;
+              height: 60px;
+              text-align: center;
+              vertical-align: top;
+              border-radius: 6px;
+              box-shadow: 0px 2px 6px 0px rgba(39,44,55,.27);
+              padding: 0 8px;
+              max-width: 100%;
+                &::before {
+                  width: 0;
+                  height: 60px;
+                  content: "";
+                  display: inline-block;
+                  vertical-align: middle;
+              }
+               img {
                     width:100%;
                     height:auto;
                     max-height: 40px;
-                    // vertical-align: middle;
-                    border-style: none;
+                   
                     
-                }
+                  }
               }
-
               h2 {
 
                 font-size: 16px;
@@ -739,6 +747,17 @@ main {
                 padding:0 0 0 20px;
                 position: relative;
                 color: $card_light_text_color;
+                &::before {
+                  content: "";
+                  width: 12px;
+                  height: 13px;
+                  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+                  background-position: -2px -67px;
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+              }
                 
               }
             }
@@ -767,12 +786,48 @@ main {
                 font-family: 'roboto',sans-serif;
                 position: relative;
                 padding: 0 0 0 20px;
+                &::before {
+                  content: "";
+                  width: 14px;
+                  height: 14px;
+                  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background-position: -138px -67px;
+              }
+              }
+              .learner {
+                color: #4f4f4f;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                display: block;
               }
 
               .cohort {
                 display: inline-block;
                 vertical-align: top;
                 margin-top: 4px;
+              }
+              .rating {
+                position: relative;
+                padding-left: 20px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 4px;
+                &::before {
+                  content: "";
+                  width: 14px;
+                  height: 14px;
+                  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background-position: -225px -67px;
+              }
               }
 
               span {

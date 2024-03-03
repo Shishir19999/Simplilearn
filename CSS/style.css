@@ -562,6 +562,12 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-body .c
   overflow: hidden;
   position: relative;
 }
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-banner .crd-1 {
+  background: #ffcbcd;
+  background-image: radial-gradient(circle, #fffcf3 18%, #FFCBCD 63%, #FFCBCD 100%);
+  background-position: 4px -1px;
+  background-size: 152% 130%;
+}
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-banner img {
   width: 100%;
   max-height: 122px;
@@ -580,22 +586,26 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-body .c
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo {
   display: inline-block;
   background: #fff;
-  width: 225px;
+  width: auto;
   height: 60px;
+  text-align: center;
   vertical-align: top;
   border-radius: 6px;
   box-shadow: 0px 2px 6px 0px rgba(39, 44, 55, 0.27);
   padding: 0 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo::before {
+  width: 0;
+  height: 60px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo img {
   width: 100%;
   height: auto;
   max-height: 40px;
-  border-style: none;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info h2 {
   font-size: 16px;
@@ -615,6 +625,17 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-body .c
   padding: 0 0 0 20px;
   position: relative;
   color: #4f4f4f;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-list p::before {
+  content: "";
+  width: 12px;
+  height: 13px;
+  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+  background-position: -2px -67px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-schedule {
   height: 36px;
@@ -638,10 +659,46 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-schedul
   position: relative;
   padding: 0 0 0 20px;
 }
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .month::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: -138px -67px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .learner {
+  color: #4f4f4f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: block;
+}
 main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .cohort {
   display: inline-block;
   vertical-align: top;
   margin-top: 4px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .rating {
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left .rating::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(https://www.simplilearn.com/ice9/assets/new-home-page-sprite.svgz) no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: -225px -67px;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-schedule .card-left span {
   color: #4f4f4f;
