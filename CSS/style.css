@@ -588,24 +588,19 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-body .c
   background: #fff;
   width: auto;
   height: 60px;
-  text-align: center;
-  vertical-align: top;
   border-radius: 6px;
   box-shadow: 0px 2px 6px 0px rgba(39, 44, 55, 0.27);
   padding: 0 8px;
   max-width: 100%;
 }
-main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo::before {
-  width: 0;
-  height: 60px;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo img {
+  margin-top: 12px;
   width: 100%;
   height: auto;
   max-height: 40px;
+}
+main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info .card-logo .perdue-img {
+  margin-top: 19px;
 }
 main .our-new-program .all-program-cat .right-category-cards .card .card-body .card-info h2 {
   font-size: 16px;
@@ -721,7 +716,7 @@ main .our-new-program .all-program-cat .right-category-cards .card .card-schedul
   color: #1179ef;
 }
 main .bootcamp {
-  height: 421.64px;
+  height: 373.64px;
   background: #f8fbff;
   padding-bottom: 48px;
 }
@@ -796,4 +791,94 @@ main .bootcamp ul li .bootcamp-info p {
   color: #6C7480;
   margin: 16px 0 0;
   line-height: 1.43;
+}
+main .review-rating {
+  height: 910.6px;
+}
+main .review-rating .rating {
+  height: 526.6px;
+}
+main .review-rating .rating .container-rating {
+  height: 382.6px;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+main .review-rating .rating .container-rating .left-rating {
+  display: inline-block;
+  width: 455px;
+  vertical-align: bottom;
+}
+main .review-rating .rating .container-rating .left-rating h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #272c37;
+}
+main .review-rating .rating .container-rating .left-rating ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  list-style: none;
+}
+main .review-rating .rating .container-rating .left-rating ul li {
+  padding-top: 37px;
+}
+main .review-rating .rating .container-rating .left-rating ul li a > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+main .review-rating .rating .container-rating .left-rating ul li a {
+  display: table;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+}
+main .review-rating .rating .container-rating .left-rating ul li a span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  width: 130px;
+  position: relative;
+  color: #272c37;
+}
+main .review-rating .rating .container-rating .left-rating ul li a span::before {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  margin-top: -24px;
+  height: 48px;
+  border-right: 1px solid #bdc6d9;
+}
+main .review-rating .rating .container-rating .left-rating ul li a span::after {
+  content: "";
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) url(https://www.simplilearn.com/ice9/assets/home/sprite.svgz) no-repeat -183px -21px;
+  width: 13px;
+  height: 13px;
+}
+main .review-rating .rating .container-rating .left-rating ul li a img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+main .review-rating .rating .container-rating .right-rating {
+  display: inline-block;
+  width: 685px;
+  height: 375px;
+  text-align: center;
+}
+main .review-rating .rating .container-rating .right-rating .videoframe {
+  width: 639px;
+  height: 375px;
+  margin: 0 0 0 46px;
+}
+main .review-rating .rating .container-rating .right-rating .videoframe img {
+  width: 639px;
+  height: 375px;
 }/*# sourceMappingURL=style.css.map */
