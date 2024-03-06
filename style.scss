@@ -1053,5 +1053,62 @@ main {
         }
       }
     }
+    .review{
+      height:384px;
+      width:100%;
+      .review-slider-detail{
+        height:320px;
+        width:100%;
+        .review-slider-container{
+          height:392px;
+          width:100%;
+          display:flex;
+          justify-content: space-between;
+          .review-card{
+            width:491px;
+            height:186px;
+            padding:24px 30px 66px;
+            background-color: red;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+            position: relative;
+            height: 100%;
+            .profile{
+              float: left;
+              width: 80px;
+              height: 80px;
+              border: 4px solid #fff;
+              box-shadow: 0 10px 20px 0 rgba(141,169,188,.2);
+              border-radius: 50%;
+              display: block;
+              margin: 0 auto;
+              position: relative;
+              margin-left: 0;
+              &:after {
+                display: inline-block;
+                content: "";
+                width: 26px;
+                height: 26px;
+                background: url(https://www.simplilearn.com/ice9/assets/course_sprite_7.svgz) no-repeat;
+                background-position: -18px -289px;
+                position: absolute;
+                bottom: 0;
+                right: -6px;
+              }
+              img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                vertical-align: middle;
+                border-style: none;
+                
+              }
+            }
+            .
+          }
+        }
+      }
+    }
   }
 }
