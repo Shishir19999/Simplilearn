@@ -200,7 +200,6 @@ header .top-header ul li a:hover {
 }
 .menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .title-course-child {
   width: 100%;
-  background: purple;
   height: 43px;
 }
 .menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .title-course-child img {
@@ -208,12 +207,10 @@ header .top-header ul li a:hover {
 }
 .menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .description-course-child {
   width: 100%;
-  background: rgb(246, 95, 7);
   height: 43px;
 }
 .menu ul .mega-menu .right-menu .menu-right-top .right-menu-top-gaps .course-child .date-sourse-child {
   width: 100%;
-  background: rgb(0, 160, 29);
   height: 43px;
 }
 .menu ul .mega-menu .right-menu .menu-right-btn {
@@ -936,4 +933,13 @@ main .review-rating .review .review-slider-detail .review-slider-container .revi
   border-radius: 50%;
   vertical-align: middle;
   border-style: none;
+}
+main .review-rating .review .review-slider-detail .review-slider-container .review-card .card-info {
+  float: left;
+  width: calc(100% - 80px);
+  text-align: left;
+  padding: 0 0px 0 20px;
+}
+main .review-rating .review .review-slider-detail .review-slider-container .review-card .card-info h3 {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
