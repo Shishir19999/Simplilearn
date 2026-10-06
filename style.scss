@@ -361,7 +361,7 @@ main {
     height: 412.5px;
     background-color: #8B5338;
     padding: 80px 0 0;
-    background-image: url(/img/banner.avif);
+    background-image: url(../img/banner.avif);
     background-size: cover;
     background-position: center top;
     display: flex;
@@ -1141,4 +1141,78 @@ main {
       }
     }
   }
+}
+
+/* ---- Additions: mobile menu toggle + responsive layout ---- */
+.nav-toggle { display: none; background: #118aef; color: #fff; border: 0; border-radius: 4px; font-size: 22px; line-height: 1; padding: 8px 12px; cursor: pointer; }
+img, video { max-width: 100%; }
+
+@media (max-width: 1200px) {
+  .container { width: auto !important; margin: 0 auto !important; max-width: 1140px; }
+  header .top-header { width: 100% !important; }
+  main .banner { width: 100% !important; }
+  main .banner .container { margin: 0 auto !important; width: auto !important; }
+  main .career-partner #career-partner-content { margin: 0 auto !important; }
+  main .our-new-program { width: 100% !important; height: auto !important; }
+  main .our-new-program .all-program-cat { width: auto !important; height: auto !important; }
+  main .our-new-program .all-program-cat .right-category-cards { width: auto !important; flex: 1; justify-content: space-between; }
+  main .our-new-program .all-program-cat .right-category-cards .card { margin-right: 0 !important; }
+}
+
+@media (max-width: 992px) {
+  header { height: auto; }
+  header .top-header { height: auto; display: none; }
+  header .top-header ul { flex-direction: column; height: auto; margin: 0; padding: 8px 15px; }
+  header .top-header ul li a { margin: 0; line-height: 36px; }
+  .bottom-header { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 10px; }
+  .nav-toggle { display: block; order: 2; }
+  .bottom-header .logo { order: 1; flex: 1; }
+  .bottom-header .login-section { order: 3; width: auto; margin-left: 10px; }
+  .bottom-header .menu, .bottom-header .search { display: none; order: 4; width: 100%; }
+  header.menu-open .top-header { display: block; }
+  header.menu-open .bottom-header .menu, header.menu-open .bottom-header .search { display: block; }
+  .menu ul li button { margin-left: 0; }
+  .menu ul .mega-menu { display: none !important; }
+  .search { margin: 10px 0; }
+  .search img { left: 15px; }
+  .search input { margin-left: 0; width: 100%; box-sizing: border-box; }
+
+  main .banner { height: auto !important; padding: 40px 0 0 !important; background-position: center; }
+  main .banner .container { height: auto !important; }
+  main .banner .container .banner-container { flex-direction: column; align-items: flex-start; }
+  main .banner .container .banner-container .left-banner { width: 100% !important; height: auto !important; }
+  main .banner .container .banner-container .left-banner .banner-title h1 { width: auto !important; height: auto !important; font-size: 36px; }
+  main .banner .container .banner-container .left-banner .banner-link { height: 120px; }
+  main .banner .container .banner-container .right-banner { position: static !important; width: 100% !important; height: auto !important; }
+  main .banner .container .banner-container .right-banner .videoframe img { display: none; }
+  main .banner .container .banner-container .right-banner .videoframe video { position: static !important; width: 100% !important; height: auto !important; margin-bottom: 20px; }
+
+  main .our-new-program h1 { height: auto; line-height: 1.25; font-size: 26px; }
+  main .our-new-program .all-program-cat { flex-direction: column; }
+  main .our-new-program .all-program-cat .left-program-categories { position: static !important; width: 100% !important; height: auto !important; margin-right: 0; }
+  main .our-new-program .all-program-cat .left-program-categories .top-left-program-cat, main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat, main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat .show-list { width: auto !important; height: auto !important; }
+  main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat .show-list { display: flex; flex-wrap: wrap; }
+  main .our-new-program .all-program-cat .left-program-categories .bottom-left-program-cat .show-list .category-tab { width: auto !important; padding: 8px 16px 8px 8px; }
+  main .our-new-program .all-program-cat .right-category-cards { justify-content: flex-start; gap: 16px; }
+
+  main .bootcamp { height: auto !important; }
+  main .bootcamp ul { flex-wrap: wrap; gap: 20px; }
+  main .bootcamp ul li { height: auto !important; }
+
+  main .review-rating { height: auto !important; }
+  main .review-rating .rating, main .review-rating .rating .container-rating { height: auto !important; }
+  main .review-rating .rating .container-rating { flex-direction: column; }
+  main .review-rating .rating .container-rating .right-rating, main .review-rating .rating .container-rating .right-rating .videoframe { width: 100% !important; height: auto !important; margin: 0 !important; }
+  main .review-rating .rating .container-rating .right-rating .videoframe img { width: 100% !important; height: auto !important; }
+  main .review-rating .review, main .review-rating .review .review-slider-detail, main .review-rating .review .review-slider-detail .review-slider-container { height: auto !important; }
+}
+
+@media (max-width: 600px) {
+  main .banner .container .banner-container .left-banner .banner-title h1 { font-size: 28px; }
+  main .banner .container .banner-container .left-banner .banner-link .banner-button { width: 100%; max-width: 260px; }
+  main .our-new-program .all-program-cat .right-category-cards .card { width: 100% !important; height: auto !important; }
+  main .our-new-program .all-program-cat .right-category-cards .card .card-body { width: 100% !important; }
+  main .bootcamp ul li { width: 100% !important; }
+  main .bootcamp ul li .bootcamp-info { width: auto !important; height: auto !important; }
+  main .bootcamp h2 { font-size: 24px; }
 }

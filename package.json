@@ -1,0 +1,12 @@
+{
+  "name": "simplilearn-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simplilearn homepage clone (practice project)",
+  "scripts": {
+    "build:css": "sass --style=expanded --source-map style.scss CSS/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
